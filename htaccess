@@ -1,0 +1,39 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page15790131.html
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^header$ page15791926.html [NC]
+RewriteRule ^header/$ page15791926.html [NC]
+
+RewriteRule ^de$ page16242756.html [NC]
+RewriteRule ^de/$ page16242756.html [NC]
+
+RewriteRule ^nl$ page16666560.html [NC]
+RewriteRule ^nl/$ page16666560.html [NC]
+
+RewriteRule ^footer$ page15835099.html [NC]
+RewriteRule ^footer/$ page15835099.html [NC]
+
+RewriteRule ^blog$ page15878569.html [NC]
+RewriteRule ^blog/$ page15878569.html [NC]
+
+RewriteRule ^de/blog$ page16284324.html [NC]
+RewriteRule ^de/blog/$ page16284324.html [NC]
+
+RewriteRule ^nl/blog$ page16710800.html [NC]
+RewriteRule ^nl/blog/$ page16710800.html [NC]
+
+RewriteRule ^export-to-europe-tir-cmr$ page15876389.html [NC]
+RewriteRule ^export-to-europe-tir-cmr/$ page15876389.html [NC]
+
+RewriteRule ^policy$ page16747218.html [NC]
+RewriteRule ^policy/$ page16747218.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild6465-6663-4738-a639-316638356633/favicon.ico [R=302,L]
+
